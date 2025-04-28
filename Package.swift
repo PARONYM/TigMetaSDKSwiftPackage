@@ -15,11 +15,5 @@ let package = Package(
             name: "TigMetaSDK",
             path: "TigMetaSDK.xcframework"
         ),
-        .target(
-            name: "TigMetaSDKSwiftPackage",
-            dependencies: [
-                "TigMetaSDK",
-            ]
-        ),
     ]
 )
