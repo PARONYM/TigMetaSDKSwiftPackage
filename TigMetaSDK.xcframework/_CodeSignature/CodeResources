@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		3y++sUAKzaCQmjLBz2v0kvESHgc=
-		</data>
 		<key>ios-arm64/TigMetaSDK.framework/Headers/TigMetaSDK.h</key>
 		<data>
-		iY9VAsJiL7BixeDcKIQo4TcK6J4=
+		gM2Py/ntLWJdOqu1PVsdzXj2Q88=
 		</data>
 		<key>ios-arm64/TigMetaSDK.framework/Info.plist</key>
 		<data>
@@ -22,7 +18,7 @@
 		</data>
 		<key>ios-arm64/TigMetaSDK.framework/TigMetaSDK</key>
 		<data>
-		YBRDIAccN7c0S5p2Wp42WC49Wf8=
+		bncAU6cUCduDwto3Z0M1VbRP68U=
 		</data>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -30,15 +26,15 @@
 		</data>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Resources/DWARF/TigMetaSDK</key>
 		<data>
-		5tJw2/TXMtnXQEIolyjYXz49Oso=
+		MqK7yAYYEA3kStRAjCAl86KtLhg=
 		</data>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TigMetaSDK.yml</key>
 		<data>
-		AjUc9rHPWP8l0TheiF0BRd5IvCs=
+		D1bAKqKY46wRTlQ5cHeOMHMYKt4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Headers/TigMetaSDK.h</key>
 		<data>
-		iY9VAsJiL7BixeDcKIQo4TcK6J4=
+		gM2Py/ntLWJdOqu1PVsdzXj2Q88=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Info.plist</key>
 		<data>
@@ -50,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/TigMetaSDK</key>
 		<data>
-		C0qfh4y4MiuBh6E8K+FdwqXr3/8=
+		VBw92xj8YRvJvHF70DzIYDACSBY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TigMetaSDK.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -58,7 +54,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TigMetaSDK.framework.dSYM/Contents/Resources/DWARF/TigMetaSDK</key>
 		<data>
-		95+F5PvbqQJfW0QFk6vOq2B7VAo=
+		68NmuwKppE9fv4hIPAYp1O9peu4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iY9VAsJiL7BixeDcKIQo4TcK6J4=
+			gM2Py/ntLWJdOqu1PVsdzXj2Q88=
 			</data>
 			<key>hash2</key>
 			<data>
-			lPJ9SFUTwYUONs1uQmy4NsV6td+8q/a3TMwpeSiBcJc=
+			EG1yl0ycsvlh6gyhX3GtoyZcVIn1PEpW2lUCqRQgD9I=
 			</data>
 		</dict>
 		<key>ios-arm64/TigMetaSDK.framework/Info.plist</key>
@@ -100,11 +96,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YBRDIAccN7c0S5p2Wp42WC49Wf8=
+			bncAU6cUCduDwto3Z0M1VbRP68U=
 			</data>
 			<key>hash2</key>
 			<data>
-			/WuXBaioTlPMeQIur6YEZC3+c/byEgYJMTCRni9EjrY=
+			G4jBNSfMeW2OVE6GWutt/E9/J7Dyde+Lwh68H0tY3dg=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Info.plist</key>
@@ -122,33 +118,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5tJw2/TXMtnXQEIolyjYXz49Oso=
+			MqK7yAYYEA3kStRAjCAl86KtLhg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ISdtAAwJykC9FPgQR19ljJEhM1Ha1dYCLVpqYAcPv9c=
+			36JLkzOEdb93oXhsq5vrJ1zz/TnCbTXWhAHlWiEJK+Q=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TigMetaSDK.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AjUc9rHPWP8l0TheiF0BRd5IvCs=
+			D1bAKqKY46wRTlQ5cHeOMHMYKt4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GCaPg4WuXc/aq4WS2/3OOpvh9/6iK2Rj32HGBCbbxHo=
+			H0OIggftbh5CRfz4YCVLl5Tu1uC1x1uubVtBRz/WM1A=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Headers/TigMetaSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iY9VAsJiL7BixeDcKIQo4TcK6J4=
+			gM2Py/ntLWJdOqu1PVsdzXj2Q88=
 			</data>
 			<key>hash2</key>
 			<data>
-			lPJ9SFUTwYUONs1uQmy4NsV6td+8q/a3TMwpeSiBcJc=
+			EG1yl0ycsvlh6gyhX3GtoyZcVIn1PEpW2lUCqRQgD9I=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Info.plist</key>
@@ -177,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C0qfh4y4MiuBh6E8K+FdwqXr3/8=
+			VBw92xj8YRvJvHF70DzIYDACSBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			PlxU5lcFSr7d0pvAUj4eB82N/l9hUPmX8eBMEZzqppo=
+			EMXWk6+TYoQOkpGO60L/J7IHbHZ0VchWOZLg5ji72Ig=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TigMetaSDK.framework.dSYM/Contents/Info.plist</key>
@@ -199,11 +195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			95+F5PvbqQJfW0QFk6vOq2B7VAo=
+			68NmuwKppE9fv4hIPAYp1O9peu4=
 			</data>
 			<key>hash2</key>
 			<data>
-			itU9wVz9l0m16g8pvnVd7L0kNyPjIFnq2xTg1uYG4Ps=
+			oZ+lGEXQ6O21Q7Wa5pGQ2a1tOUcEVJ8lb/LVH06vtNU=
 			</data>
 		</dict>
 	</dict>

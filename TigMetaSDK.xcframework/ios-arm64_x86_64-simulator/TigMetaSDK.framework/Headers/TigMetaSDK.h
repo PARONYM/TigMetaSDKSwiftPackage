@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class TMSDKContent, TMSDKMetadata, TMSDKPoints, TMSDKContentDataResponse, TMSDKMetaDataResponse, TMSDKPointsDataResponse, TMSDKItem, TMSDKKotlinArray<T>, TMSDKContentCompanion, TMSDKGroupCompanion, TMSDKGroup, TMSDKPanel, TMSDKItemCompanion, TMSDKMetaCompanion, TMSDKMeta, TMSDKMetabodyCompanion, TMSDKMetabody, TMSDKMetadataCompanion, TMSDKPanelCompanion, TMSDKPointCompanion, TMSDKPoint, TMSDKPointsCompanion, TMSDKKotlinThrowable, TMSDKKotlinException, TMSDKKotlinRuntimeException, TMSDKKotlinIllegalStateException, TMSDKKotlinx_serialization_coreSerializersModule, TMSDKKotlinx_serialization_coreSerialKind, TMSDKKotlinNothing;
+@class TMSDKContent, TMSDKMetadata, TMSDKPoints, TMSDKContentDataResponse, TMSDKMetaDataResponse, TMSDKPointsDataResponse, TMSDKItem, TMSDKKotlinArray<T>, TMSDKVideo, TMSDKContentCompanion, TMSDKGroupCompanion, TMSDKGroup, TMSDKPanel, TMSDKItemCompanion, TMSDKMetaCompanion, TMSDKMeta, TMSDKMetabodyCompanion, TMSDKMetabody, TMSDKMetadataCompanion, TMSDKPanelCompanion, TMSDKPointCompanion, TMSDKPoint, TMSDKPointsCompanion, TMSDKVideoCompanion, TMSDKKotlinThrowable, TMSDKKotlinException, TMSDKKotlinRuntimeException, TMSDKKotlinIllegalStateException, TMSDKKotlinx_serialization_coreSerializersModule, TMSDKKotlinx_serialization_coreSerialKind, TMSDKKotlinNothing;
 
 @protocol TMSDKKotlinx_serialization_coreKSerializer, TMSDKKotlinIterator, TMSDKKotlinx_serialization_coreEncoder, TMSDKKotlinx_serialization_coreSerialDescriptor, TMSDKKotlinx_serialization_coreSerializationStrategy, TMSDKKotlinx_serialization_coreDecoder, TMSDKKotlinx_serialization_coreDeserializationStrategy, TMSDKKotlinx_serialization_coreCompositeEncoder, TMSDKKotlinAnnotation, TMSDKKotlinx_serialization_coreCompositeDecoder, TMSDKKotlinx_serialization_coreSerializersModuleCollector, TMSDKKotlinKClass, TMSDKKotlinKDeclarationContainer, TMSDKKotlinKAnnotatedElement, TMSDKKotlinKClassifier;
 
@@ -204,9 +204,9 @@ __attribute__((swift_name("Tig")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Content")))
 @interface TMSDKContent : TMSDKBase
-- (instancetype)initWithTitle:(NSString *)title description:(NSString * _Nullable)description thumbnail_url:(NSString *)thumbnail_url group_id:(int32_t)group_id group_name:(NSString *)group_name url:(NSString *)url created:(NSString *)created updated:(NSString *)updated items:(TMSDKKotlinArray<TMSDKItem *> *)items custom:(NSString * _Nullable)custom logo_mode:(int32_t)logo_mode logo_image_url:(NSString * _Nullable)logo_image_url logo_link_url:(NSString * _Nullable)logo_link_url ogp_image_url:(NSString * _Nullable)ogp_image_url error:(NSString * _Nullable)error __attribute__((swift_name("init(title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:error:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithTitle:(NSString *)title description:(NSString * _Nullable)description thumbnail_url:(NSString *)thumbnail_url group_id:(int32_t)group_id group_name:(NSString *)group_name url:(NSString *)url created:(NSString *)created updated:(NSString *)updated items:(TMSDKKotlinArray<TMSDKItem *> *)items custom:(NSString * _Nullable)custom logo_mode:(int32_t)logo_mode logo_image_url:(NSString * _Nullable)logo_image_url logo_link_url:(NSString * _Nullable)logo_link_url ogp_image_url:(NSString * _Nullable)ogp_image_url videos:(TMSDKKotlinArray<TMSDKVideo *> *)videos error:(NSString * _Nullable)error __attribute__((swift_name("init(title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) TMSDKContentCompanion *companion __attribute__((swift_name("companion")));
-- (TMSDKContent *)doCopyTitle:(NSString *)title description:(NSString * _Nullable)description thumbnail_url:(NSString *)thumbnail_url group_id:(int32_t)group_id group_name:(NSString *)group_name url:(NSString *)url created:(NSString *)created updated:(NSString *)updated items:(TMSDKKotlinArray<TMSDKItem *> *)items custom:(NSString * _Nullable)custom logo_mode:(int32_t)logo_mode logo_image_url:(NSString * _Nullable)logo_image_url logo_link_url:(NSString * _Nullable)logo_link_url ogp_image_url:(NSString * _Nullable)ogp_image_url error:(NSString * _Nullable)error __attribute__((swift_name("doCopy(title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:error:)")));
+- (TMSDKContent *)doCopyTitle:(NSString *)title description:(NSString * _Nullable)description thumbnail_url:(NSString *)thumbnail_url group_id:(int32_t)group_id group_name:(NSString *)group_name url:(NSString *)url created:(NSString *)created updated:(NSString *)updated items:(TMSDKKotlinArray<TMSDKItem *> *)items custom:(NSString * _Nullable)custom logo_mode:(int32_t)logo_mode logo_image_url:(NSString * _Nullable)logo_image_url logo_link_url:(NSString * _Nullable)logo_link_url ogp_image_url:(NSString * _Nullable)ogp_image_url videos:(TMSDKKotlinArray<TMSDKVideo *> *)videos error:(NSString * _Nullable)error __attribute__((swift_name("doCopy(title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -300,6 +300,12 @@ __attribute__((swift_name("Content")))
  *   kotlinx.serialization.SerialName(value="player_url")
 */
 @property (readonly) NSString *url __attribute__((swift_name("url")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="videos")
+*/
+@property (readonly) TMSDKKotlinArray<TMSDKVideo *> *videos __attribute__((swift_name("videos")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -865,6 +871,86 @@ __attribute__((swift_name("Points.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) TMSDKPointsCompanion *shared __attribute__((swift_name("shared")));
+- (id<TMSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Video")))
+@interface TMSDKVideo : TMSDKBase
+- (instancetype)initWithTitle:(NSString *)title url:(NSString *)url duration:(double)duration width:(int32_t)width height:(int32_t)height first_frame_image_url:(NSString *)first_frame_image_url seek_thumbnail_url:(NSString *)seek_thumbnail_url seek_type:(TMSDKBoolean * _Nullable)seek_type subtitles:(TMSDKKotlinArray<NSString *> * _Nullable)subtitles __attribute__((swift_name("init(title:url:duration:width:height:first_frame_image_url:seek_thumbnail_url:seek_type:subtitles:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) TMSDKVideoCompanion *companion __attribute__((swift_name("companion")));
+- (TMSDKVideo *)doCopyTitle:(NSString *)title url:(NSString *)url duration:(double)duration width:(int32_t)width height:(int32_t)height first_frame_image_url:(NSString *)first_frame_image_url seek_thumbnail_url:(NSString *)seek_thumbnail_url seek_type:(TMSDKBoolean * _Nullable)seek_type subtitles:(TMSDKKotlinArray<NSString *> * _Nullable)subtitles __attribute__((swift_name("doCopy(title:url:duration:width:height:first_frame_image_url:seek_thumbnail_url:seek_type:subtitles:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="duration")
+*/
+@property (readonly) double duration __attribute__((swift_name("duration")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="first_frame_image_url")
+*/
+@property (readonly) NSString *first_frame_image_url __attribute__((swift_name("first_frame_image_url")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="height")
+*/
+@property (readonly) int32_t height __attribute__((swift_name("height")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="seek_thumbnail_url")
+*/
+@property (readonly) NSString *seek_thumbnail_url __attribute__((swift_name("seek_thumbnail_url")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="seek_type")
+*/
+@property (readonly) TMSDKBoolean * _Nullable seek_type __attribute__((swift_name("seek_type")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="subtitles")
+*/
+@property (readonly) TMSDKKotlinArray<NSString *> * _Nullable subtitles __attribute__((swift_name("subtitles")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="identifier")
+*/
+@property (readonly) NSString *title __attribute__((swift_name("title")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="playlist_url")
+*/
+@property (readonly) NSString *url __attribute__((swift_name("url")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="width")
+*/
+@property (readonly) int32_t width __attribute__((swift_name("width")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Video.Companion")))
+@interface TMSDKVideoCompanion : TMSDKBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) TMSDKVideoCompanion *shared __attribute__((swift_name("shared")));
 - (id<TMSDKKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
