@@ -1,0 +1,2908 @@
+Name: "TigMetaSDK"
+Classes:
+- Name: "TMSDKBase"
+  SwiftName: "KotlinBase"
+- Name: "TMSDKMutableSet"
+  SwiftName: "KotlinMutableSet"
+- Name: "TMSDKMutableDictionary"
+  SwiftName: "KotlinMutableDictionary"
+- Name: "TMSDKNumber"
+  SwiftName: "KotlinNumber"
+- Name: "TMSDKByte"
+  SwiftName: "KotlinByte"
+- Name: "TMSDKUByte"
+  SwiftName: "KotlinUByte"
+- Name: "TMSDKShort"
+  SwiftName: "KotlinShort"
+- Name: "TMSDKUShort"
+  SwiftName: "KotlinUShort"
+- Name: "TMSDKInt"
+  SwiftName: "KotlinInt"
+- Name: "TMSDKUInt"
+  SwiftName: "KotlinUInt"
+- Name: "TMSDKLong"
+  SwiftName: "KotlinLong"
+- Name: "TMSDKULong"
+  SwiftName: "KotlinULong"
+- Name: "TMSDKFloat"
+  SwiftName: "KotlinFloat"
+- Name: "TMSDKDouble"
+  SwiftName: "KotlinDouble"
+- Name: "TMSDKBoolean"
+  SwiftName: "KotlinBoolean"
+- Name: "TMSDKKotlinCancellationException"
+  SwiftName: "KotlinCancellationException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "TMSDKKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKKotlinThrowable * _Nullable"
+- Name: "TMSDKKotlinThrowable"
+  SwiftName: "KotlinThrowable"
+  Properties:
+  - Name: "cause"
+    PropertyKind: "Instance"
+    SwiftName: "cause"
+    Type: "TMSDKKotlinThrowable * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKKotlinThrowable * _Nullable"
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "TMSDKKotlinThrowable * _Nullable"
+  - Selector: "getStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "getStackTrace()"
+    ResultType: "TMSDKKotlinArray<NSString *> * _Nonnull"
+  - Selector: "printStackTrace"
+    MethodKind: "Instance"
+    SwiftName: "printStackTrace()"
+    ResultType: "void"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKKotlinArray"
+  SwiftName: "KotlinArray"
+  Properties:
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  Methods:
+  - Selector: "arrayWithSize:init:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:init:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "T _Nullable (^ _Nonnull)(TMSDKInt * _Nonnull)"
+  - Selector: "getIndex:"
+    MethodKind: "Instance"
+    SwiftName: "get(index:)"
+    ResultType: "T _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "iterator"
+    MethodKind: "Instance"
+    SwiftName: "iterator()"
+    ResultType: "id<TMSDKKotlinIterator> _Nonnull"
+  - Selector: "setIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "set(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "T _Nullable"
+- Name: "TMSDKKotlinIllegalStateException"
+  SwiftName: "KotlinIllegalStateException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "TMSDKKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKKotlinThrowable * _Nullable"
+- Name: "TMSDKKotlinRuntimeException"
+  SwiftName: "KotlinRuntimeException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "TMSDKKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKKotlinThrowable * _Nullable"
+- Name: "TMSDKKotlinException"
+  SwiftName: "KotlinException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "TMSDKKotlinThrowable * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKKotlinThrowable * _Nullable"
+- Name: "TMSDKKotlinNothing"
+  SwiftName: "KotlinNothing"
+- Name: "TMSDKSkieColdFlowIterator"
+  SwiftName: "SkieColdFlowIterator"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithFlow:"
+    MethodKind: "Instance"
+    SwiftName: "init(flow:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "cancel"
+    MethodKind: "Instance"
+    SwiftName: "cancel()"
+    ResultType: "void"
+  - Selector: "hasNextWithCompletionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__hasNext(completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(TMSDKBoolean * _Nullable, NSError * _Nullable)"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "E _Nullable"
+- Name: "TMSDKSkieKotlinFlow"
+  SwiftBridge: "SkieSwiftFlow"
+  SwiftName: "SkieKotlinFlow"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKSkieKotlinMutableSharedFlow"
+  SwiftBridge: "SkieSwiftMutableSharedFlow"
+  SwiftName: "SkieKotlinMutableSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "TMSDKSkieKotlinStateFlow<TMSDKInt *> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreMutableSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+- Name: "TMSDKSkieKotlinMutableStateFlow"
+  SwiftBridge: "SkieSwiftMutableStateFlow"
+  SwiftName: "SkieKotlinMutableStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "TMSDKSkieKotlinStateFlow<TMSDKInt *> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreMutableStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "T _Nonnull"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nonnull"
+- Name: "TMSDKSkieKotlinOptionalFlow"
+  SwiftBridge: "SkieSwiftOptionalFlow"
+  SwiftName: "SkieKotlinOptionalFlow"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKSkieKotlinOptionalMutableSharedFlow"
+  SwiftBridge: "SkieSwiftOptionalMutableSharedFlow"
+  SwiftName: "SkieKotlinOptionalMutableSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "TMSDKSkieKotlinStateFlow<TMSDKInt *> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreMutableSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+- Name: "TMSDKSkieKotlinOptionalMutableStateFlow"
+  SwiftBridge: "SkieSwiftOptionalMutableStateFlow"
+  SwiftName: "SkieKotlinOptionalMutableStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "TMSDKSkieKotlinStateFlow<TMSDKInt *> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nullable"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreMutableStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "T _Nullable"
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+- Name: "TMSDKSkieKotlinOptionalSharedFlow"
+  SwiftBridge: "SkieSwiftOptionalSharedFlow"
+  SwiftName: "SkieKotlinOptionalSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKSkieKotlinOptionalStateFlow"
+  SwiftBridge: "SkieSwiftOptionalStateFlow"
+  SwiftName: "SkieKotlinOptionalStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nullable"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKSkieKotlinSharedFlow"
+  SwiftBridge: "SkieSwiftSharedFlow"
+  SwiftName: "SkieKotlinSharedFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreSharedFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKSkieKotlinStateFlow"
+  SwiftBridge: "SkieSwiftStateFlow"
+  SwiftName: "SkieKotlinStateFlow"
+  SwiftPrivate: true
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<T> * _Nonnull"
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nonnull"
+  Methods:
+  - Selector: "initWithDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "init(_:)"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreStateFlow> _Nonnull"
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKSkie_CancellationHandler"
+  SwiftName: "Skie_CancellationHandler"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "cancel"
+    MethodKind: "Instance"
+    SwiftName: "cancel()"
+    ResultType: "void"
+- Name: "TMSDKSkie_SuspendHandler"
+  SwiftName: "Skie_SuspendHandler"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "initWithCancellationHandler:dispatcherDelegate:onResult:"
+    MethodKind: "Instance"
+    SwiftName: "init(cancellationHandler:dispatcherDelegate:onResult:)"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKSkie_CancellationHandler * _Nonnull"
+    - Position: 1
+      Type: "id<TMSDKSkie_DispatcherDelegate> _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(TMSDKSkie_SuspendResult * _Nonnull)"
+- Name: "TMSDKSkie_SuspendResult"
+  SwiftName: "Skie_SuspendResult"
+  SwiftPrivate: true
+- Name: "TMSDKSkie_SuspendResultSuccess"
+  SwiftName: "Skie_SuspendResult.Success"
+  SwiftPrivate: true
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+  Methods:
+  - Selector: "initWithValue:"
+    MethodKind: "Instance"
+    SwiftName: "init(value:)"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "doCopyValue:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(value:)"
+    ResultType: "TMSDKSkie_SuspendResultSuccess * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKSkie_SuspendResultError"
+  SwiftName: "Skie_SuspendResult.Error"
+  SwiftPrivate: true
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSError * _Nonnull"
+  Methods:
+  - Selector: "initWithError:"
+    MethodKind: "Instance"
+    SwiftName: "init(error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSError * _Nonnull"
+  - Selector: "doCopyError:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(error:)"
+    ResultType: "TMSDKSkie_SuspendResultError * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSError * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKSkie_SuspendResultCanceled"
+  SwiftName: "Skie_SuspendResult.Canceled"
+  SwiftPrivate: true
+- Name: "TMSDKContentDataResponse"
+  SwiftName: "ContentDataResponse"
+  Properties:
+  - Name: "data"
+    PropertyKind: "Instance"
+    SwiftName: "data"
+    Type: "TMSDKContent * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+- Name: "TMSDKContent"
+  SwiftName: "Content"
+  Properties:
+  - Name: "created"
+    PropertyKind: "Instance"
+    SwiftName: "created"
+    Type: "NSString * _Nonnull"
+  - Name: "custom"
+    PropertyKind: "Instance"
+    SwiftName: "custom"
+    Type: "NSString * _Nullable"
+  - Name: "description_"
+    PropertyKind: "Instance"
+    SwiftName: "description_"
+    Type: "NSString * _Nullable"
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "group_id"
+    PropertyKind: "Instance"
+    SwiftName: "group_id"
+    Type: "int32_t"
+  - Name: "group_name"
+    PropertyKind: "Instance"
+    SwiftName: "group_name"
+    Type: "NSString * _Nonnull"
+  - Name: "items"
+    PropertyKind: "Instance"
+    SwiftName: "items"
+    Type: "TMSDKKotlinArray<TMSDKItem *> * _Nonnull"
+  - Name: "logo_image_url"
+    PropertyKind: "Instance"
+    SwiftName: "logo_image_url"
+    Type: "NSString * _Nullable"
+  - Name: "logo_link_url"
+    PropertyKind: "Instance"
+    SwiftName: "logo_link_url"
+    Type: "NSString * _Nullable"
+  - Name: "logo_mode"
+    PropertyKind: "Instance"
+    SwiftName: "logo_mode"
+    Type: "int32_t"
+  - Name: "ogp_image_url"
+    PropertyKind: "Instance"
+    SwiftName: "ogp_image_url"
+    Type: "NSString * _Nullable"
+  - Name: "thumbnail_url"
+    PropertyKind: "Instance"
+    SwiftName: "thumbnail_url"
+    Type: "NSString * _Nonnull"
+  - Name: "title"
+    PropertyKind: "Instance"
+    SwiftName: "title"
+    Type: "NSString * _Nonnull"
+  - Name: "updated"
+    PropertyKind: "Instance"
+    SwiftName: "updated"
+    Type: "NSString * _Nonnull"
+  - Name: "url"
+    PropertyKind: "Instance"
+    SwiftName: "url"
+    Type: "NSString * _Nonnull"
+  - Name: "videos"
+    PropertyKind: "Instance"
+    SwiftName: "videos"
+    Type: "TMSDKKotlinArray<TMSDKVideo *> * _Nonnull"
+  Methods:
+  - Selector: "initWithTitle:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+    - Position: 6
+      Type: "NSString * _Nonnull"
+    - Position: 7
+      Type: "NSString * _Nonnull"
+    - Position: 8
+      Type: "TMSDKKotlinArray<TMSDKItem *> * _Nonnull"
+    - Position: 9
+      Type: "NSString * _Nullable"
+    - Position: 10
+      Type: "int32_t"
+    - Position: 11
+      Type: "NSString * _Nullable"
+    - Position: 12
+      Type: "NSString * _Nullable"
+    - Position: 13
+      Type: "NSString * _Nullable"
+    - Position: 14
+      Type: "TMSDKKotlinArray<TMSDKVideo *> * _Nonnull"
+    - Position: 15
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyTitle:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:)"
+    ResultType: "TMSDKContent * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+    - Position: 6
+      Type: "NSString * _Nonnull"
+    - Position: 7
+      Type: "NSString * _Nonnull"
+    - Position: 8
+      Type: "TMSDKKotlinArray<TMSDKItem *> * _Nonnull"
+    - Position: 9
+      Type: "NSString * _Nullable"
+    - Position: 10
+      Type: "int32_t"
+    - Position: 11
+      Type: "NSString * _Nullable"
+    - Position: 12
+      Type: "NSString * _Nullable"
+    - Position: 13
+      Type: "NSString * _Nullable"
+    - Position: 14
+      Type: "TMSDKKotlinArray<TMSDKVideo *> * _Nonnull"
+    - Position: 15
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKContentCompanion"
+  SwiftName: "Content.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKVideo"
+  SwiftName: "Video"
+  Properties:
+  - Name: "duration"
+    PropertyKind: "Instance"
+    SwiftName: "duration"
+    Type: "double"
+  - Name: "first_frame_image_url"
+    PropertyKind: "Instance"
+    SwiftName: "first_frame_image_url"
+    Type: "NSString * _Nonnull"
+  - Name: "height"
+    PropertyKind: "Instance"
+    SwiftName: "height"
+    Type: "int32_t"
+  - Name: "seek_thumbnail_url"
+    PropertyKind: "Instance"
+    SwiftName: "seek_thumbnail_url"
+    Type: "NSString * _Nonnull"
+  - Name: "seek_type"
+    PropertyKind: "Instance"
+    SwiftName: "seek_type"
+    Type: "TMSDKBoolean * _Nullable"
+  - Name: "subtitles"
+    PropertyKind: "Instance"
+    SwiftName: "subtitles"
+    Type: "TMSDKKotlinArray<NSString *> * _Nullable"
+  - Name: "title"
+    PropertyKind: "Instance"
+    SwiftName: "title"
+    Type: "NSString * _Nonnull"
+  - Name: "url"
+    PropertyKind: "Instance"
+    SwiftName: "url"
+    Type: "NSString * _Nonnull"
+  - Name: "width"
+    PropertyKind: "Instance"
+    SwiftName: "width"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithTitle:url:duration:width:height:first_frame_image_url:seek_thumbnail_url:seek_type:subtitles:"
+    MethodKind: "Instance"
+    SwiftName: "init(title:url:duration:width:height:first_frame_image_url:seek_thumbnail_url:seek_type:subtitles:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "double"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "int32_t"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+    - Position: 6
+      Type: "NSString * _Nonnull"
+    - Position: 7
+      Type: "TMSDKBoolean * _Nullable"
+    - Position: 8
+      Type: "TMSDKKotlinArray<NSString *> * _Nullable"
+  - Selector: "doCopyTitle:url:duration:width:height:first_frame_image_url:seek_thumbnail_url:seek_type:subtitles:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(title:url:duration:width:height:first_frame_image_url:seek_thumbnail_url:seek_type:subtitles:)"
+    ResultType: "TMSDKVideo * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "double"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "int32_t"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+    - Position: 6
+      Type: "NSString * _Nonnull"
+    - Position: 7
+      Type: "TMSDKBoolean * _Nullable"
+    - Position: 8
+      Type: "TMSDKKotlinArray<NSString *> * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKVideoCompanion"
+  SwiftName: "Video.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKItem"
+  SwiftName: "Item"
+  Properties:
+  - Name: "balloon"
+    PropertyKind: "Instance"
+    SwiftName: "balloon"
+    Type: "NSString * _Nullable"
+  - Name: "balloon_bg_color"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_bg_color"
+    Type: "NSString * _Nonnull"
+  - Name: "balloon_bg_opacity"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_bg_opacity"
+    Type: "int32_t"
+  - Name: "balloon_custom_image_url"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_custom_image_url"
+    Type: "NSString * _Nonnull"
+  - Name: "balloon_direction"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_direction"
+    Type: "int32_t"
+  - Name: "balloon_font_style"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_font_style"
+    Type: "int32_t"
+  - Name: "balloon_font_weight"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_font_weight"
+    Type: "int32_t"
+  - Name: "balloon_overflow"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_overflow"
+    Type: "int32_t"
+  - Name: "balloon_size"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_size"
+    Type: "int32_t"
+  - Name: "balloon_text_color"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_text_color"
+    Type: "NSString * _Nonnull"
+  - Name: "balloon_type"
+    PropertyKind: "Instance"
+    SwiftName: "balloon_type"
+    Type: "int32_t"
+  - Name: "class_type"
+    PropertyKind: "Instance"
+    SwiftName: "class_type"
+    Type: "NSString * _Nonnull"
+  - Name: "currency_code"
+    PropertyKind: "Instance"
+    SwiftName: "currency_code"
+    Type: "NSString * _Nullable"
+  - Name: "custom"
+    PropertyKind: "Instance"
+    SwiftName: "custom"
+    Type: "NSString * _Nullable"
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "hidden_balloon"
+    PropertyKind: "Instance"
+    SwiftName: "hidden_balloon"
+    Type: "BOOL"
+  - Name: "hidden_thumbnail"
+    PropertyKind: "Instance"
+    SwiftName: "hidden_thumbnail"
+    Type: "BOOL"
+  - Name: "open_behavior"
+    PropertyKind: "Instance"
+    SwiftName: "open_behavior"
+    Type: "NSString * _Nonnull"
+  - Name: "panel"
+    PropertyKind: "Instance"
+    SwiftName: "panel"
+    Type: "TMSDKPanel * _Nullable"
+  - Name: "popup_size"
+    PropertyKind: "Instance"
+    SwiftName: "popup_size"
+    Type: "int32_t"
+  - Name: "price"
+    PropertyKind: "Instance"
+    SwiftName: "price"
+    Type: "int32_t"
+  - Name: "show_text_with_image"
+    PropertyKind: "Instance"
+    SwiftName: "show_text_with_image"
+    Type: "BOOL"
+  - Name: "sku"
+    PropertyKind: "Instance"
+    SwiftName: "sku"
+    Type: "NSString * _Nonnull"
+  - Name: "tap_behavior"
+    PropertyKind: "Instance"
+    SwiftName: "tap_behavior"
+    Type: "NSString * _Nonnull"
+  - Name: "thumbnail_url"
+    PropertyKind: "Instance"
+    SwiftName: "thumbnail_url"
+    Type: "NSString * _Nonnull"
+  - Name: "time"
+    PropertyKind: "Instance"
+    SwiftName: "time"
+    Type: "NSString * _Nullable"
+  - Name: "title"
+    PropertyKind: "Instance"
+    SwiftName: "title"
+    Type: "NSString * _Nonnull"
+  - Name: "type"
+    PropertyKind: "Instance"
+    SwiftName: "type"
+    Type: "NSString * _Nonnull"
+  - Name: "url"
+    PropertyKind: "Instance"
+    SwiftName: "url"
+    Type: "NSString * _Nonnull"
+  - Name: "vm_scripts"
+    PropertyKind: "Instance"
+    SwiftName: "vm_scripts"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithTitle:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(title:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+    - Position: 6
+      Type: "NSString * _Nonnull"
+    - Position: 7
+      Type: "int32_t"
+    - Position: 8
+      Type: "NSString * _Nullable"
+    - Position: 9
+      Type: "NSString * _Nullable"
+    - Position: 10
+      Type: "NSString * _Nonnull"
+    - Position: 11
+      Type: "int32_t"
+    - Position: 12
+      Type: "NSString * _Nonnull"
+    - Position: 13
+      Type: "int32_t"
+    - Position: 14
+      Type: "int32_t"
+    - Position: 15
+      Type: "int32_t"
+    - Position: 16
+      Type: "int32_t"
+    - Position: 17
+      Type: "int32_t"
+    - Position: 18
+      Type: "NSString * _Nonnull"
+    - Position: 19
+      Type: "int32_t"
+    - Position: 20
+      Type: "BOOL"
+    - Position: 21
+      Type: "BOOL"
+    - Position: 22
+      Type: "NSString * _Nonnull"
+    - Position: 23
+      Type: "int32_t"
+    - Position: 24
+      Type: "NSString * _Nullable"
+    - Position: 25
+      Type: "NSString * _Nullable"
+    - Position: 26
+      Type: "TMSDKPanel * _Nullable"
+    - Position: 27
+      Type: "NSString * _Nullable"
+    - Position: 28
+      Type: "BOOL"
+    - Position: 29
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyTitle:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(title:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:)"
+    ResultType: "TMSDKItem * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+    - Position: 5
+      Type: "NSString * _Nonnull"
+    - Position: 6
+      Type: "NSString * _Nonnull"
+    - Position: 7
+      Type: "int32_t"
+    - Position: 8
+      Type: "NSString * _Nullable"
+    - Position: 9
+      Type: "NSString * _Nullable"
+    - Position: 10
+      Type: "NSString * _Nonnull"
+    - Position: 11
+      Type: "int32_t"
+    - Position: 12
+      Type: "NSString * _Nonnull"
+    - Position: 13
+      Type: "int32_t"
+    - Position: 14
+      Type: "int32_t"
+    - Position: 15
+      Type: "int32_t"
+    - Position: 16
+      Type: "int32_t"
+    - Position: 17
+      Type: "int32_t"
+    - Position: 18
+      Type: "NSString * _Nonnull"
+    - Position: 19
+      Type: "int32_t"
+    - Position: 20
+      Type: "BOOL"
+    - Position: 21
+      Type: "BOOL"
+    - Position: 22
+      Type: "NSString * _Nonnull"
+    - Position: 23
+      Type: "int32_t"
+    - Position: 24
+      Type: "NSString * _Nullable"
+    - Position: 25
+      Type: "NSString * _Nullable"
+    - Position: 26
+      Type: "TMSDKPanel * _Nullable"
+    - Position: 27
+      Type: "NSString * _Nullable"
+    - Position: 28
+      Type: "BOOL"
+    - Position: 29
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKItemCompanion"
+  SwiftName: "Item.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKPanel"
+  SwiftName: "Panel"
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "image_url"
+    PropertyKind: "Instance"
+    SwiftName: "image_url"
+    Type: "NSString * _Nonnull"
+  - Name: "marker_type"
+    PropertyKind: "Instance"
+    SwiftName: "marker_type"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithImage_url:marker_type:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(image_url:marker_type:error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyImage_url:marker_type:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(image_url:marker_type:error:)"
+    ResultType: "TMSDKPanel * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKPanelCompanion"
+  SwiftName: "Panel.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKPointsDataResponse"
+  SwiftName: "PointsDataResponse"
+  Properties:
+  - Name: "data"
+    PropertyKind: "Instance"
+    SwiftName: "data"
+    Type: "TMSDKPoints * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+- Name: "TMSDKPoints"
+  SwiftName: "Points"
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "points"
+    PropertyKind: "Instance"
+    SwiftName: "points"
+    Type: "TMSDKKotlinArray<TMSDKPoint *> * _Nonnull"
+  Methods:
+  - Selector: "initWithPoints:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(points:error:)"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKKotlinArray<TMSDKPoint *> * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyPoints:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(points:error:)"
+    ResultType: "TMSDKPoints * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKKotlinArray<TMSDKPoint *> * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKPointsCompanion"
+  SwiftName: "Points.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKPoint"
+  SwiftName: "Point"
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "event_time"
+    PropertyKind: "Instance"
+    SwiftName: "event_time"
+    Type: "NSString * _Nonnull"
+  - Name: "item_group"
+    PropertyKind: "Instance"
+    SwiftName: "item_group"
+    Type: "NSString * _Nonnull"
+  - Name: "item_id"
+    PropertyKind: "Instance"
+    SwiftName: "item_id"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithItem_id:item_group:event_time:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(item_id:item_group:event_time:error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyItem_id:item_group:event_time:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(item_id:item_group:event_time:error:)"
+    ResultType: "TMSDKPoint * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKPointCompanion"
+  SwiftName: "Point.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKMetaDataResponse"
+  SwiftName: "MetaDataResponse"
+  Properties:
+  - Name: "data"
+    PropertyKind: "Instance"
+    SwiftName: "data"
+    Type: "TMSDKMetadata * _Nullable"
+  - Name: "message"
+    PropertyKind: "Instance"
+    SwiftName: "message"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+- Name: "TMSDKMetadata"
+  SwiftName: "Metadata"
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "metabody"
+    PropertyKind: "Instance"
+    SwiftName: "metabody"
+    Type: "TMSDKMetabody * _Nonnull"
+  - Name: "statuscode"
+    PropertyKind: "Instance"
+    SwiftName: "statuscode"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithStatuscode:metabody:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(statuscode:metabody:error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "TMSDKMetabody * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyStatuscode:metabody:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(statuscode:metabody:error:)"
+    ResultType: "TMSDKMetadata * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "TMSDKMetabody * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKMetadataCompanion"
+  SwiftName: "Metadata.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKMetabody"
+  SwiftName: "Metabody"
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "interval"
+    PropertyKind: "Instance"
+    SwiftName: "interval"
+    Type: "int32_t"
+  - Name: "name"
+    PropertyKind: "Instance"
+    SwiftName: "name"
+    Type: "NSString * _Nonnull"
+  - Name: "next"
+    PropertyKind: "Instance"
+    SwiftName: "next"
+    Type: "NSDictionary<NSString *, NSDictionary<NSString *, TMSDKMeta *> *> * _Nullable"
+  - Name: "now"
+    PropertyKind: "Instance"
+    SwiftName: "now"
+    Type: "NSDictionary<NSString *, NSDictionary<NSString *, TMSDKMeta *> *> * _Nonnull"
+  Methods:
+  - Selector: "initWithName:interval:now:next:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:interval:now:next:error:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSDictionary<NSString *, NSDictionary<NSString *, TMSDKMeta *> *> * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, NSDictionary<NSString *, TMSDKMeta *> *> * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyName:interval:now:next:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(name:interval:now:next:error:)"
+    ResultType: "TMSDKMetabody * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSDictionary<NSString *, NSDictionary<NSString *, TMSDKMeta *> *> * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, NSDictionary<NSString *, TMSDKMeta *> *> * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKMetabodyCompanion"
+  SwiftName: "Metabody.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKMeta"
+  SwiftName: "Meta"
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "height"
+    PropertyKind: "Instance"
+    SwiftName: "height"
+    Type: "double"
+  - Name: "item_id"
+    PropertyKind: "Instance"
+    SwiftName: "item_id"
+    Type: "int32_t"
+  - Name: "position"
+    PropertyKind: "Instance"
+    SwiftName: "position"
+    Type: "int32_t"
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  - Name: "width"
+    PropertyKind: "Instance"
+    SwiftName: "width"
+    Type: "double"
+  - Name: "x"
+    PropertyKind: "Instance"
+    SwiftName: "x"
+    Type: "double"
+  - Name: "y"
+    PropertyKind: "Instance"
+    SwiftName: "y"
+    Type: "double"
+  - Name: "z"
+    PropertyKind: "Instance"
+    SwiftName: "z"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithItem_id:size:x:y:z:width:height:position:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(item_id:size:x:y:z:width:height:position:error:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "double"
+    - Position: 3
+      Type: "double"
+    - Position: 4
+      Type: "int32_t"
+    - Position: 5
+      Type: "double"
+    - Position: 6
+      Type: "double"
+    - Position: 7
+      Type: "int32_t"
+    - Position: 8
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyItem_id:size:x:y:z:width:height:position:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(item_id:size:x:y:z:width:height:position:error:)"
+    ResultType: "TMSDKMeta * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "double"
+    - Position: 3
+      Type: "double"
+    - Position: 4
+      Type: "int32_t"
+    - Position: 5
+      Type: "double"
+    - Position: 6
+      Type: "double"
+    - Position: 7
+      Type: "int32_t"
+    - Position: 8
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKMetaCompanion"
+  SwiftName: "Meta.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKTig"
+  SwiftName: "Tig"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "getContentDataJwt:cid:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getContentData(jwt:cid:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(TMSDKContentDataResponse * _Nullable, NSError * _Nullable)"
+  - Selector: "getMetaDataJwt:cid:pagenum:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getMetaData(jwt:cid:pagenum:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "void (^ _Nonnull)(TMSDKMetaDataResponse * _Nullable, NSError * _Nullable)"
+  - Selector: "getPointsDataJwt:cid:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getPointsData(jwt:cid:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(TMSDKPointsDataResponse * _Nullable, NSError * _Nullable)"
+- Name: "TMSDKGroup"
+  SwiftName: "Group"
+  Properties:
+  - Name: "error"
+    PropertyKind: "Instance"
+    SwiftName: "error"
+    Type: "NSString * _Nullable"
+  - Name: "gid"
+    PropertyKind: "Instance"
+    SwiftName: "gid"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithGid:error:"
+    MethodKind: "Instance"
+    SwiftName: "init(gid:error:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyGid:error:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(gid:error:)"
+    ResultType: "TMSDKGroup * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKGroupCompanion"
+  SwiftName: "Group.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "TMSDKKotlinx_serialization_coreSerialKind"
+  SwiftName: "Kotlinx_serialization_coreSerialKind"
+  Methods:
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKKotlinx_serialization_coreSerialKindCONTEXTUAL"
+  SwiftName: "Kotlinx_serialization_coreSerialKind.CONTEXTUAL"
+- Name: "TMSDKKotlinx_serialization_coreSerialKindENUM"
+  SwiftName: "Kotlinx_serialization_coreSerialKind.ENUM"
+- Name: "TMSDKKotlinx_serialization_coreSerializersModule"
+  SwiftName: "Kotlinx_serialization_coreSerializersModule"
+  Methods:
+  - Selector: "dumpToCollector:"
+    MethodKind: "Instance"
+    SwiftName: "dumpTo(collector:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerializersModuleCollector> _Nonnull"
+  - Selector: "getContextualKClass:typeArgumentsSerializers:"
+    MethodKind: "Instance"
+    SwiftName: "getContextual(kClass:typeArgumentsSerializers:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "NSArray<id<TMSDKKotlinx_serialization_coreKSerializer>> * _Nonnull"
+  - Selector: "getPolymorphicBaseClass:value:"
+    MethodKind: "Instance"
+    SwiftName: "getPolymorphic(baseClass:value:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreSerializationStrategy> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id _Nonnull"
+  - Selector: "getPolymorphicBaseClass:serializedClassName:"
+    MethodKind: "Instance"
+    SwiftName: "getPolymorphic(baseClass:serializedClassName:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreDeserializationStrategy> _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+- Name: "TMSDKKotlinx_serialization_corePolymorphicKind"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind"
+- Name: "TMSDKKotlinx_serialization_corePolymorphicKindOPEN"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind.OPEN"
+- Name: "TMSDKKotlinx_serialization_corePolymorphicKindSEALED"
+  SwiftName: "Kotlinx_serialization_corePolymorphicKind.SEALED"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKind"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindBOOLEAN"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BOOLEAN"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindBYTE"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.BYTE"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindCHAR"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.CHAR"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindDOUBLE"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.DOUBLE"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindFLOAT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.FLOAT"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindINT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.INT"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindLONG"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.LONG"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindSHORT"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.SHORT"
+- Name: "TMSDKKotlinx_serialization_corePrimitiveKindSTRING"
+  SwiftName: "Kotlinx_serialization_corePrimitiveKind.STRING"
+- Name: "TMSDKKotlinx_serialization_coreStructureKind"
+  SwiftName: "Kotlinx_serialization_coreStructureKind"
+- Name: "TMSDKKotlinx_serialization_coreStructureKindCLASS"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.CLASS"
+- Name: "TMSDKKotlinx_serialization_coreStructureKindLIST"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.LIST"
+- Name: "TMSDKKotlinx_serialization_coreStructureKindMAP"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.MAP"
+- Name: "TMSDKKotlinx_serialization_coreStructureKindOBJECT"
+  SwiftName: "Kotlinx_serialization_coreStructureKind.OBJECT"
+- Name: "TMSDK__SkieTypeExportsKt"
+  SwiftName: "__SkieTypeExportsKt"
+  Availability: "nonswift"
+  Methods:
+  - Selector: "skieTypeExports_0P0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:"
+    MethodKind: "Class"
+    SwiftName: "skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKKotlinx_serialization_corePolymorphicKind * _Nonnull"
+    - Position: 1
+      Type: "TMSDKKotlinx_serialization_corePolymorphicKindOPEN * _Nonnull"
+    - Position: 2
+      Type: "TMSDKKotlinx_serialization_corePolymorphicKindSEALED * _Nonnull"
+    - Position: 3
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKind * _Nonnull"
+    - Position: 4
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindBOOLEAN * _Nonnull"
+    - Position: 5
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindBYTE * _Nonnull"
+    - Position: 6
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindCHAR * _Nonnull"
+    - Position: 7
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindDOUBLE * _Nonnull"
+    - Position: 8
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindFLOAT * _Nonnull"
+    - Position: 9
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindINT * _Nonnull"
+    - Position: 10
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindLONG * _Nonnull"
+    - Position: 11
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindSHORT * _Nonnull"
+    - Position: 12
+      Type: "TMSDKKotlinx_serialization_corePrimitiveKindSTRING * _Nonnull"
+    - Position: 13
+      Type: "TMSDKKotlinx_serialization_coreSerialKindCONTEXTUAL * _Nonnull"
+    - Position: 14
+      Type: "TMSDKKotlinx_serialization_coreSerialKindENUM * _Nonnull"
+    - Position: 15
+      Type: "TMSDKKotlinx_serialization_coreStructureKind * _Nonnull"
+    - Position: 16
+      Type: "TMSDKKotlinx_serialization_coreStructureKindCLASS * _Nonnull"
+    - Position: 17
+      Type: "TMSDKKotlinx_serialization_coreStructureKindLIST * _Nonnull"
+    - Position: 18
+      Type: "TMSDKKotlinx_serialization_coreStructureKindMAP * _Nonnull"
+    - Position: 19
+      Type: "TMSDKKotlinx_serialization_coreStructureKindOBJECT * _Nonnull"
+- Name: "TMSDK__SkieSuspendWrappersKt"
+  SwiftName: "__SkieSuspendWrappersKt"
+  Availability: "nonswift"
+  Methods:
+  - Selector: "Skie_Suspend__0__hasNextDispatchReceiver:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__0__hasNext(dispatchReceiver:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKSkieColdFlowIterator<id> * _Nonnull"
+    - Position: 1
+      Type: "TMSDKSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__1__collectDispatchReceiver:collector:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__1__collect(dispatchReceiver:collector:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlow> _Nonnull"
+    - Position: 1
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 2
+      Type: "TMSDKSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__2__emitDispatchReceiver:value:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__2__emit(dispatchReceiver:value:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+    - Position: 2
+      Type: "TMSDKSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__3__getContentDataDispatchReceiver:jwt:cid:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__3__getContentData(dispatchReceiver:jwt:cid:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKTig * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "TMSDKSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__4__getMetaDataDispatchReceiver:jwt:cid:pagenum:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__4__getMetaData(dispatchReceiver:jwt:cid:pagenum:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKTig * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "TMSDKSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__5__getPointsDataDispatchReceiver:jwt:cid:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__5__getPointsData(dispatchReceiver:jwt:cid:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "TMSDKTig * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "TMSDKSkie_SuspendHandler * _Nonnull"
+Protocols:
+- Name: "TMSDKKotlinIterator"
+  SwiftName: "KotlinIterator"
+  Methods:
+  - Selector: "hasNext"
+    MethodKind: "Instance"
+    SwiftName: "hasNext()"
+    ResultType: "BOOL"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "id _Nullable"
+- Name: "TMSDKKotlinAnnotation"
+  SwiftName: "KotlinAnnotation"
+- Name: "TMSDKKotlinKClass"
+  SwiftName: "KotlinKClass"
+  Properties:
+  - Name: "qualifiedName"
+    PropertyKind: "Instance"
+    SwiftName: "qualifiedName"
+    Type: "NSString * _Nullable"
+  - Name: "simpleName"
+    PropertyKind: "Instance"
+    SwiftName: "simpleName"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "isInstanceValue:"
+    MethodKind: "Instance"
+    SwiftName: "isInstance(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+- Name: "TMSDKKotlinKClassifier"
+  SwiftName: "KotlinKClassifier"
+- Name: "TMSDKKotlinKAnnotatedElement"
+  SwiftName: "KotlinKAnnotatedElement"
+- Name: "TMSDKKotlinKDeclarationContainer"
+  SwiftName: "KotlinKDeclarationContainer"
+- Name: "TMSDKSkie_DispatcherDelegate"
+  SwiftName: "Skie_DispatcherDelegate"
+  SwiftPrivate: true
+  Methods:
+  - Selector: "dispatchBlock:"
+    MethodKind: "Instance"
+    SwiftName: "dispatch(block:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreRunnable> _Nonnull"
+- Name: "TMSDKKotlinx_coroutines_coreFlow"
+  SwiftName: "Kotlinx_coroutines_coreFlow"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKKotlinx_coroutines_coreFlowCollector"
+  SwiftName: "Kotlinx_coroutines_coreFlowCollector"
+  Methods:
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKKotlinx_coroutines_coreStateFlow"
+  SwiftName: "Kotlinx_coroutines_coreStateFlow"
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+- Name: "TMSDKKotlinx_coroutines_coreSharedFlow"
+  SwiftName: "Kotlinx_coroutines_coreSharedFlow"
+  Properties:
+  - Name: "replayCache"
+    PropertyKind: "Instance"
+    SwiftName: "replayCache"
+    Type: "NSArray<id> * _Nonnull"
+  Methods:
+  - Selector: "collectCollector:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__collect(collector:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_coroutines_coreFlowCollector> _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "TMSDKKotlinx_coroutines_coreMutableSharedFlow"
+  SwiftName: "Kotlinx_coroutines_coreMutableSharedFlow"
+  Properties:
+  - Name: "subscriptionCount"
+    PropertyKind: "Instance"
+    SwiftName: "subscriptionCount"
+    Type: "TMSDKSkieKotlinStateFlow<TMSDKInt *> * _Nonnull"
+  Methods:
+  - Selector: "emitValue:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__emit(value:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "resetReplayCache"
+    MethodKind: "Instance"
+    SwiftName: "resetReplayCache()"
+    ResultType: "void"
+  - Selector: "tryEmitValue:"
+    MethodKind: "Instance"
+    SwiftName: "tryEmit(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+- Name: "TMSDKKotlinx_coroutines_coreMutableStateFlow"
+  SwiftName: "Kotlinx_coroutines_coreMutableStateFlow"
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "id _Nullable"
+  Methods:
+  - Selector: "compareAndSetExpect:update:"
+    MethodKind: "Instance"
+    SwiftName: "compareAndSet(expect:update:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable"
+- Name: "TMSDKKotlinx_coroutines_coreRunnable"
+  SwiftName: "Kotlinx_coroutines_coreRunnable"
+  Methods:
+  - Selector: "run"
+    MethodKind: "Instance"
+    SwiftName: "run()"
+    ResultType: "void"
+- Name: "TMSDKKotlinx_serialization_coreKSerializer"
+  SwiftName: "Kotlinx_serialization_coreKSerializer"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+- Name: "TMSDKKotlinx_serialization_coreDeserializationStrategy"
+  SwiftName: "Kotlinx_serialization_coreDeserializationStrategy"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  Methods:
+  - Selector: "deserializeDecoder:"
+    MethodKind: "Instance"
+    SwiftName: "deserialize(decoder:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreDecoder> _Nonnull"
+- Name: "TMSDKKotlinx_serialization_coreDecoder"
+  SwiftName: "Kotlinx_serialization_coreDecoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "TMSDKKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "beginStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "beginStructure(descriptor:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreCompositeDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeBoolean"
+    MethodKind: "Instance"
+    SwiftName: "decodeBoolean()"
+    ResultType: "BOOL"
+  - Selector: "decodeByte"
+    MethodKind: "Instance"
+    SwiftName: "decodeByte()"
+    ResultType: "int8_t"
+  - Selector: "decodeChar"
+    MethodKind: "Instance"
+    SwiftName: "decodeChar()"
+    ResultType: "unichar"
+  - Selector: "decodeDouble"
+    MethodKind: "Instance"
+    SwiftName: "decodeDouble()"
+    ResultType: "double"
+  - Selector: "decodeEnumEnumDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeEnum(enumDescriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeFloat"
+    MethodKind: "Instance"
+    SwiftName: "decodeFloat()"
+    ResultType: "float"
+  - Selector: "decodeInlineDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeInline(descriptor:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeInt"
+    MethodKind: "Instance"
+    SwiftName: "decodeInt()"
+    ResultType: "int32_t"
+  - Selector: "decodeLong"
+    MethodKind: "Instance"
+    SwiftName: "decodeLong()"
+    ResultType: "int64_t"
+  - Selector: "decodeNotNullMark"
+    MethodKind: "Instance"
+    SwiftName: "decodeNotNullMark()"
+    ResultType: "BOOL"
+  - Selector: "decodeNull"
+    MethodKind: "Instance"
+    SwiftName: "decodeNull()"
+    ResultType: "TMSDKKotlinNothing * _Nullable"
+  - Selector: "decodeNullableSerializableValueDeserializer:"
+    MethodKind: "Instance"
+    SwiftName: "decodeNullableSerializableValue(deserializer:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+  - Selector: "decodeSerializableValueDeserializer:"
+    MethodKind: "Instance"
+    SwiftName: "decodeSerializableValue(deserializer:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+  - Selector: "decodeShort"
+    MethodKind: "Instance"
+    SwiftName: "decodeShort()"
+    ResultType: "int16_t"
+  - Selector: "decodeString"
+    MethodKind: "Instance"
+    SwiftName: "decodeString()"
+    ResultType: "NSString * _Nonnull"
+- Name: "TMSDKKotlinx_serialization_coreSerialDescriptor"
+  SwiftName: "Kotlinx_serialization_coreSerialDescriptor"
+  Properties:
+  - Name: "annotations"
+    PropertyKind: "Instance"
+    SwiftName: "annotations"
+    Type: "NSArray<id<TMSDKKotlinAnnotation>> * _Nonnull"
+  - Name: "elementsCount"
+    PropertyKind: "Instance"
+    SwiftName: "elementsCount"
+    Type: "int32_t"
+  - Name: "isInline"
+    PropertyKind: "Instance"
+    SwiftName: "isInline"
+    Type: "BOOL"
+  - Name: "isNullable"
+    PropertyKind: "Instance"
+    SwiftName: "isNullable"
+    Type: "BOOL"
+  - Name: "kind"
+    PropertyKind: "Instance"
+    SwiftName: "kind"
+    Type: "TMSDKKotlinx_serialization_coreSerialKind * _Nonnull"
+  - Name: "serialName"
+    PropertyKind: "Instance"
+    SwiftName: "serialName"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "getElementAnnotationsIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementAnnotations(index:)"
+    ResultType: "NSArray<id<TMSDKKotlinAnnotation>> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getElementDescriptorIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementDescriptor(index:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "getElementIndexName:"
+    MethodKind: "Instance"
+    SwiftName: "getElementIndex(name:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "getElementNameIndex:"
+    MethodKind: "Instance"
+    SwiftName: "getElementName(index:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "isElementOptionalIndex:"
+    MethodKind: "Instance"
+    SwiftName: "isElementOptional(index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+- Name: "TMSDKKotlinx_serialization_coreCompositeDecoder"
+  SwiftName: "Kotlinx_serialization_coreCompositeDecoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "TMSDKKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "decodeBooleanElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeBooleanElement(descriptor:index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeByteElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeByteElement(descriptor:index:)"
+    ResultType: "int8_t"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeCharElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeCharElement(descriptor:index:)"
+    ResultType: "unichar"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeCollectionSizeDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeCollectionSize(descriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeDoubleElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeDoubleElement(descriptor:index:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeElementIndexDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "decodeElementIndex(descriptor:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "decodeFloatElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeFloatElement(descriptor:index:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeInlineElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeInlineElement(descriptor:index:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreDecoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeIntElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeIntElement(descriptor:index:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeLongElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeLongElement(descriptor:index:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeNullableSerializableElementDescriptor:index:deserializer:previousValue:"
+    MethodKind: "Instance"
+    SwiftName: "decodeNullableSerializableElement(descriptor:index:deserializer:previousValue:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<TMSDKKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "decodeSequentially"
+    MethodKind: "Instance"
+    SwiftName: "decodeSequentially()"
+    ResultType: "BOOL"
+  - Selector: "decodeSerializableElementDescriptor:index:deserializer:previousValue:"
+    MethodKind: "Instance"
+    SwiftName: "decodeSerializableElement(descriptor:index:deserializer:previousValue:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<TMSDKKotlinx_serialization_coreDeserializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "decodeShortElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeShortElement(descriptor:index:)"
+    ResultType: "int16_t"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "decodeStringElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "decodeStringElement(descriptor:index:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "endStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "endStructure(descriptor:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+- Name: "TMSDKKotlinx_serialization_coreSerializationStrategy"
+  SwiftName: "Kotlinx_serialization_coreSerializationStrategy"
+  Properties:
+  - Name: "descriptor"
+    PropertyKind: "Instance"
+    SwiftName: "descriptor"
+    Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  Methods:
+  - Selector: "serializeEncoder:value:"
+    MethodKind: "Instance"
+    SwiftName: "serialize(encoder:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreEncoder> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+- Name: "TMSDKKotlinx_serialization_coreEncoder"
+  SwiftName: "Kotlinx_serialization_coreEncoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "TMSDKKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "beginCollectionDescriptor:collectionSize:"
+    MethodKind: "Instance"
+    SwiftName: "beginCollection(descriptor:collectionSize:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreCompositeEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "beginStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "beginStructure(descriptor:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreCompositeEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "encodeBooleanValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeBoolean(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "encodeByteValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeByte(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+  - Selector: "encodeCharValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeChar(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "unichar"
+  - Selector: "encodeDoubleValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeDouble(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "double"
+  - Selector: "encodeEnumEnumDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "encodeEnum(enumDescriptor:index:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "encodeFloatValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeFloat(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "float"
+  - Selector: "encodeInlineDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInline(descriptor:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "encodeIntValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInt(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "encodeLongValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeLong(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "encodeNotNullMark"
+    MethodKind: "Instance"
+    SwiftName: "encodeNotNullMark()"
+    ResultType: "void"
+  - Selector: "encodeNull"
+    MethodKind: "Instance"
+    SwiftName: "encodeNull()"
+    ResultType: "void"
+  - Selector: "encodeNullableSerializableValueSerializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeNullableSerializableValue(serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "encodeSerializableValueSerializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeSerializableValue(serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "encodeShortValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeShort(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+  - Selector: "encodeStringValue:"
+    MethodKind: "Instance"
+    SwiftName: "encodeString(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "TMSDKKotlinx_serialization_coreCompositeEncoder"
+  SwiftName: "Kotlinx_serialization_coreCompositeEncoder"
+  Properties:
+  - Name: "serializersModule"
+    PropertyKind: "Instance"
+    SwiftName: "serializersModule"
+    Type: "TMSDKKotlinx_serialization_coreSerializersModule * _Nonnull"
+  Methods:
+  - Selector: "encodeBooleanElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeBooleanElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "BOOL"
+  - Selector: "encodeByteElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeByteElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int8_t"
+  - Selector: "encodeCharElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeCharElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "unichar"
+  - Selector: "encodeDoubleElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeDoubleElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "double"
+  - Selector: "encodeFloatElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeFloatElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "float"
+  - Selector: "encodeInlineElementDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "encodeInlineElement(descriptor:index:)"
+    ResultType: "id<TMSDKKotlinx_serialization_coreEncoder> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "encodeIntElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeIntElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int32_t"
+  - Selector: "encodeLongElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeLongElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int64_t"
+  - Selector: "encodeNullableSerializableElementDescriptor:index:serializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeNullableSerializableElement(descriptor:index:serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<TMSDKKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "encodeSerializableElementDescriptor:index:serializer:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeSerializableElement(descriptor:index:serializer:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "id<TMSDKKotlinx_serialization_coreSerializationStrategy> _Nonnull"
+    - Position: 3
+      Type: "id _Nullable"
+  - Selector: "encodeShortElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeShortElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int16_t"
+  - Selector: "encodeStringElementDescriptor:index:value:"
+    MethodKind: "Instance"
+    SwiftName: "encodeStringElement(descriptor:index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "endStructureDescriptor:"
+    MethodKind: "Instance"
+    SwiftName: "endStructure(descriptor:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+  - Selector: "shouldEncodeElementDefaultDescriptor:index:"
+    MethodKind: "Instance"
+    SwiftName: "shouldEncodeElementDefault(descriptor:index:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinx_serialization_coreSerialDescriptor> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+- Name: "TMSDKKotlinx_serialization_coreSerializersModuleCollector"
+  SwiftName: "Kotlinx_serialization_coreSerializersModuleCollector"
+  Methods:
+  - Selector: "contextualKClass:serializer:"
+    MethodKind: "Instance"
+    SwiftName: "contextual(kClass:serializer:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "contextualKClass:provider:"
+    MethodKind: "Instance"
+    SwiftName: "contextual(kClass:provider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull (^ _Nonnull)(NSArray<id<TMSDKKotlinx_serialization_coreKSerializer>> * _Nonnull)"
+  - Selector: "polymorphicBaseClass:actualClass:actualSerializer:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphic(baseClass:actualClass:actualSerializer:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 2
+      Type: "id<TMSDKKotlinx_serialization_coreKSerializer> _Nonnull"
+  - Selector: "polymorphicDefaultBaseClass:defaultDeserializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefault(baseClass:defaultDeserializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<TMSDKKotlinx_serialization_coreDeserializationStrategy> _Nullable (^ _Nonnull)(NSString * _Nullable)"
+  - Selector: "polymorphicDefaultDeserializerBaseClass:defaultDeserializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<TMSDKKotlinx_serialization_coreDeserializationStrategy> _Nullable (^ _Nonnull)(NSString * _Nullable)"
+  - Selector: "polymorphicDefaultSerializerBaseClass:defaultSerializerProvider:"
+    MethodKind: "Instance"
+    SwiftName: "polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<TMSDKKotlinKClass> _Nonnull"
+    - Position: 1
+      Type: "id<TMSDKKotlinx_serialization_coreSerializationStrategy> _Nullable (^ _Nonnull)(id _Nonnull)"
