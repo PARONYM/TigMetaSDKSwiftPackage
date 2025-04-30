@@ -1,0 +1,836 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name TigMetaSDK
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import Foundation
+import Swift
+import SwiftUI
+@_exported import TigMetaSDK
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = TigMetaSDK.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = TigMetaSDK.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = TigMetaSDK.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = TigMetaSDK.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = TigMetaSDK.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = TigMetaSDK.Skie_SuspendResult
+      public enum Success {
+        public typealias __Kotlin = TigMetaSDK.Skie_SuspendResult.Success
+      }
+      public enum Error {
+        public typealias __Kotlin = TigMetaSDK.Skie_SuspendResult.Error
+      }
+      public enum Canceled {
+        public typealias __Kotlin = TigMetaSDK.Skie_SuspendResult.Canceled
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = TigMetaSDK.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = TigMetaSDK.Kotlinx_coroutines_coreFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = TigMetaSDK.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = TigMetaSDK.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = TigMetaSDK.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = TigMetaSDK.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = TigMetaSDK.Kotlinx_coroutines_coreRunnable
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = TigMetaSDK.Skie.KotlinxCoroutinesCore
+  public enum KotlinxSerializationCore {
+    public enum SerialKind {
+    }
+    public enum SerializersModule {
+    }
+    public enum PolymorphicKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = TigMetaSDK.Skie.KotlinxSerializationCore
+}
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func next() async -> T?
+  @objc deinit
+  public typealias Element = T
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+}
+public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
+  associatedtype Element
+  associatedtype Delegate : TigMetaSDK.Kotlinx_coroutines_coreFlow
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinOptionalFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinOptionalFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var replayCache: [T] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var replayCache: [T?] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: TigMetaSDK.SkieSwiftStateFlow<TigMetaSDK.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinMutableSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: TigMetaSDK.SkieSwiftStateFlow<TigMetaSDK.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinStateFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinStateFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinStateFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T? {
+    get
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+    set(value)
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  final public var subscriptionCount: TigMetaSDK.SkieSwiftStateFlow<TigMetaSDK.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinMutableStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : TigMetaSDK.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T? {
+    get
+    set(value)
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  final public var subscriptionCount: TigMetaSDK.SkieSwiftStateFlow<TigMetaSDK.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> TigMetaSDK.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = TigMetaSDK.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = TigMetaSDK.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any TigMetaSDK.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func collect<Flow>(flow: Flow, into binding: SwiftUICore.Binding<Flow.Element>) -> some SwiftUICore.View where Flow : TigMetaSDK.SkieSwiftFlowProtocol
+  
+  @_Concurrency.MainActor @preconcurrency public func collect<Flow, U>(flow: Flow, into binding: SwiftUICore.Binding<U>, transform: @escaping (Flow.Element) async -> U?) -> some SwiftUICore.View where Flow : TigMetaSDK.SkieSwiftFlowProtocol
+  
+  @_Concurrency.MainActor @preconcurrency public func collect<Flow>(flow: Flow, perform: @escaping (Flow.Element) async -> Swift.Void) -> some SwiftUICore.View where Flow : TigMetaSDK.SkieSwiftFlowProtocol
+  
+}
+public protocol SkieSwiftFlowWithInitialValue<Flow> {
+  associatedtype Flow : TigMetaSDK.SkieSwiftFlowProtocol
+  associatedtype Element where Self.Element == Self.Flow.Element
+}
+extension TigMetaSDK.SkieSwiftStateFlow : TigMetaSDK.SkieSwiftFlowWithInitialValue {
+  public typealias Flow = TigMetaSDK.SkieSwiftStateFlow<T>
+}
+extension TigMetaSDK.SkieSwiftOptionalStateFlow : TigMetaSDK.SkieSwiftFlowWithInitialValue {
+  public typealias Flow = TigMetaSDK.SkieSwiftOptionalStateFlow<T>
+}
+extension TigMetaSDK.SkieSwiftMutableStateFlow : TigMetaSDK.SkieSwiftFlowWithInitialValue {
+  public typealias Flow = TigMetaSDK.SkieSwiftMutableStateFlow<T>
+}
+extension TigMetaSDK.SkieSwiftOptionalMutableStateFlow : TigMetaSDK.SkieSwiftFlowWithInitialValue {
+  public typealias Flow = TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>
+}
+extension TigMetaSDK.SkieSwiftFlow {
+  final public func withInitialValue(_ initialValue: TigMetaSDK.SkieSwiftFlow<T>.Element) -> some TigMetaSDK.SkieSwiftFlowWithInitialValue<TigMetaSDK.SkieSwiftFlow<T>>
+  
+}
+extension TigMetaSDK.SkieSwiftOptionalFlow {
+  final public func withInitialValue(_ initialValue: TigMetaSDK.SkieSwiftOptionalFlow<T>.Element) -> some TigMetaSDK.SkieSwiftFlowWithInitialValue<TigMetaSDK.SkieSwiftOptionalFlow<T>>
+  
+}
+extension TigMetaSDK.SkieSwiftSharedFlow {
+  final public func withInitialValue(_ initialValue: TigMetaSDK.SkieSwiftSharedFlow<T>.Element) -> some TigMetaSDK.SkieSwiftFlowWithInitialValue<TigMetaSDK.SkieSwiftSharedFlow<T>>
+  
+}
+extension TigMetaSDK.SkieSwiftOptionalSharedFlow {
+  final public func withInitialValue(_ initialValue: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>.Element) -> some TigMetaSDK.SkieSwiftFlowWithInitialValue<TigMetaSDK.SkieSwiftOptionalSharedFlow<T>>
+  
+}
+extension TigMetaSDK.SkieSwiftMutableSharedFlow {
+  final public func withInitialValue(_ initialValue: TigMetaSDK.SkieSwiftMutableSharedFlow<T>.Element) -> some TigMetaSDK.SkieSwiftFlowWithInitialValue<TigMetaSDK.SkieSwiftMutableSharedFlow<T>>
+  
+}
+extension TigMetaSDK.SkieSwiftOptionalMutableSharedFlow {
+  final public func withInitialValue(_ initialValue: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>.Element) -> some TigMetaSDK.SkieSwiftFlowWithInitialValue<TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>>
+  
+}
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+@_Concurrency.MainActor @preconcurrency public struct Observing<Values, InitialContent, Content> : SwiftUICore.View where InitialContent : SwiftUICore.View, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public let flows: [any TigMetaSDK.SkieSwiftFlowProtocol]
+  @_Concurrency.MainActor @preconcurrency public let flowIds: [Swift.ObjectIdentifier]
+  @_Concurrency.MainActor @preconcurrency public let initialContent: () -> InitialContent
+  @_Concurrency.MainActor @preconcurrency public let content: (Values) -> Content
+  @_Concurrency.MainActor @preconcurrency public let extractValues: ([Any?]) -> Values?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 15.0, tvOS 15.0, watchOS 8.0, macOS 12.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10TigMetaSDK9ObservingV4bodyQrvp", 0) __<Values, InitialContent, Content>
+}
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+extension TigMetaSDK.Observing {
+  @_Concurrency.MainActor @preconcurrency public init<Flow1>(_ flow1: Flow1, @SwiftUICore.ViewBuilder initialContent: @escaping () -> InitialContent, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element) -> Content) where Values == Flow1.Element, Flow1 : TigMetaSDK.SkieSwiftFlowProtocol
+  @_Concurrency.MainActor @preconcurrency public init<Flow1, Flow2>(_ flow1: Flow1, _ flow2: Flow2, @SwiftUICore.ViewBuilder initialContent: @escaping () -> InitialContent, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element, Flow2.Element) -> Content) where Values == (Flow1.Element, Flow2.Element), Flow1 : TigMetaSDK.SkieSwiftFlowProtocol, Flow2 : TigMetaSDK.SkieSwiftFlowProtocol
+  @_Concurrency.MainActor @preconcurrency public init<Flow1, Flow2, Flow3>(_ flow1: Flow1, _ flow2: Flow2, _ flow3: Flow3, @SwiftUICore.ViewBuilder initialContent: @escaping () -> InitialContent, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element, Flow2.Element, Flow3.Element) -> Content) where Values == (Flow1.Element, Flow2.Element, Flow3.Element), Flow1 : TigMetaSDK.SkieSwiftFlowProtocol, Flow2 : TigMetaSDK.SkieSwiftFlowProtocol, Flow3 : TigMetaSDK.SkieSwiftFlowProtocol
+  @_Concurrency.MainActor @preconcurrency public init<Flow1, Flow2, Flow3, Flow4>(_ flow1: Flow1, _ flow2: Flow2, _ flow3: Flow3, _ flow4: Flow4, @SwiftUICore.ViewBuilder initialContent: @escaping () -> InitialContent, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element, Flow2.Element, Flow3.Element, Flow4.Element) -> Content) where Values == (Flow1.Element, Flow2.Element, Flow3.Element, Flow4.Element), Flow1 : TigMetaSDK.SkieSwiftFlowProtocol, Flow2 : TigMetaSDK.SkieSwiftFlowProtocol, Flow3 : TigMetaSDK.SkieSwiftFlowProtocol, Flow4 : TigMetaSDK.SkieSwiftFlowProtocol
+  @_Concurrency.MainActor @preconcurrency public init<Flow1, Flow2, Flow3, Flow4, Flow5>(_ flow1: Flow1, _ flow2: Flow2, _ flow3: Flow3, _ flow4: Flow4, _ flow5: Flow5, @SwiftUICore.ViewBuilder initialContent: @escaping () -> InitialContent, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element, Flow2.Element, Flow3.Element, Flow4.Element, Flow5.Element) -> Content) where Values == (Flow1.Element, Flow2.Element, Flow3.Element, Flow4.Element, Flow5.Element), Flow1 : TigMetaSDK.SkieSwiftFlowProtocol, Flow2 : TigMetaSDK.SkieSwiftFlowProtocol, Flow3 : TigMetaSDK.SkieSwiftFlowProtocol, Flow4 : TigMetaSDK.SkieSwiftFlowProtocol, Flow5 : TigMetaSDK.SkieSwiftFlowProtocol
+}
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+extension TigMetaSDK.Observing where InitialContent == SwiftUICore.EmptyView {
+  @_Concurrency.MainActor @preconcurrency public init<Flow1>(_ flow1: Flow1, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element) -> Content) where Values == Flow1.Element, Flow1 : TigMetaSDK.SkieSwiftFlowWithInitialValue
+  @_Concurrency.MainActor @preconcurrency public init<Flow1, Flow2>(_ flow1: Flow1, _ flow2: Flow2, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element, Flow2.Element) -> Content) where Values == (Flow1.Element, Flow2.Element), Flow1 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow2 : TigMetaSDK.SkieSwiftFlowWithInitialValue
+  @_Concurrency.MainActor @preconcurrency public init<Flow1, Flow2, Flow3>(_ flow1: Flow1, _ flow2: Flow2, _ flow3: Flow3, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element, Flow2.Element, Flow3.Element) -> Content) where Values == (Flow1.Element, Flow2.Element, Flow3.Element), Flow1 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow2 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow3 : TigMetaSDK.SkieSwiftFlowWithInitialValue
+  @_Concurrency.MainActor @preconcurrency public init<Flow1, Flow2, Flow3, Flow4>(_ flow1: Flow1, _ flow2: Flow2, _ flow3: Flow3, _ flow4: Flow4, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element, Flow2.Element, Flow3.Element, Flow4.Element) -> Content) where Values == (Flow1.Element, Flow2.Element, Flow3.Element, Flow4.Element), Flow1 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow2 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow3 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow4 : TigMetaSDK.SkieSwiftFlowWithInitialValue
+  @_Concurrency.MainActor @preconcurrency public init<Flow1, Flow2, Flow3, Flow4, Flow5>(_ flow1: Flow1, _ flow2: Flow2, _ flow3: Flow3, _ flow4: Flow4, _ flow5: Flow5, @SwiftUICore.ViewBuilder content: @escaping (Flow1.Element, Flow2.Element, Flow3.Element, Flow4.Element, Flow5.Element) -> Content) where Values == (Flow1.Element, Flow2.Element, Flow3.Element, Flow4.Element, Flow5.Element), Flow1 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow2 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow3 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow4 : TigMetaSDK.SkieSwiftFlowWithInitialValue, Flow5 : TigMetaSDK.SkieSwiftFlowWithInitialValue
+}
+extension TigMetaSDK.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: TigMetaSDK.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: TigMetaSDK.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: TigMetaSDK.SkieColdFlowIterator<E>) -> TigMetaSDK.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension TigMetaSDK.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> TigMetaSDK.KotlinBoolean
+}
+extension TigMetaSDK.Kotlinx_coroutines_coreFlow {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any TigMetaSDK.Kotlinx_coroutines_coreFlowCollector) async throws
+}
+extension TigMetaSDK.Kotlinx_coroutines_coreFlowCollector {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+}
+extension TigMetaSDK.Tig {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getContentData(jwt: Swift.String, cid: Swift.String) async throws -> TigMetaSDK.ContentDataResponse
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getMetaData(jwt: Swift.String, cid: Swift.String, pagenum: Swift.Int32) async throws -> TigMetaSDK.MetaDataResponse
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPointsData(jwt: Swift.String, cid: Swift.String) async throws -> TigMetaSDK.PointsDataResponse
+}
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>) -> TigMetaSDK.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>) -> TigMetaSDK.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinMutableSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+}
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>) -> TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+public func SkieKotlinStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinMutableStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>) -> TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension TigMetaSDK.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension TigMetaSDK.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: TigMetaSDK.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension TigMetaSDK.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(TigMetaSDK.Skie_SuspendResult.Canceled)
+    case error(TigMetaSDK.Skie_SuspendResult.Error)
+    case success(TigMetaSDK.Skie_SuspendResult.Success)
+    public static func == (a: TigMetaSDK.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: TigMetaSDK.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> TigMetaSDK.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : TigMetaSDK.Skie_SuspendResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> TigMetaSDK.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : TigMetaSDK.Skie_SuspendResult
+extension TigMetaSDK.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(TigMetaSDK.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(TigMetaSDK.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(TigMetaSDK.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(TigMetaSDK.Kotlinx_serialization_coreStructureKind)
+    public static func == (a: TigMetaSDK.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: TigMetaSDK.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> TigMetaSDK.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : TigMetaSDK.Kotlinx_serialization_coreSerialKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> TigMetaSDK.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : TigMetaSDK.Kotlinx_serialization_coreSerialKind
+extension TigMetaSDK.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: TigMetaSDK.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: TigMetaSDK.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> TigMetaSDK.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : TigMetaSDK.Kotlinx_serialization_coreSerializersModule
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> TigMetaSDK.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : TigMetaSDK.Kotlinx_serialization_coreSerializersModule
+extension TigMetaSDK.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(TigMetaSDK.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(TigMetaSDK.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public static func == (a: TigMetaSDK.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: TigMetaSDK.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> TigMetaSDK.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : TigMetaSDK.Kotlinx_serialization_corePolymorphicKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> TigMetaSDK.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : TigMetaSDK.Kotlinx_serialization_corePolymorphicKind
+extension TigMetaSDK.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(TigMetaSDK.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public static func == (a: TigMetaSDK.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: TigMetaSDK.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> TigMetaSDK.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : TigMetaSDK.Kotlinx_serialization_corePrimitiveKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> TigMetaSDK.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : TigMetaSDK.Kotlinx_serialization_corePrimitiveKind
+extension TigMetaSDK.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(TigMetaSDK.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(TigMetaSDK.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(TigMetaSDK.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(TigMetaSDK.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public static func == (a: TigMetaSDK.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: TigMetaSDK.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> TigMetaSDK.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : TigMetaSDK.Kotlinx_serialization_coreStructureKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> TigMetaSDK.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : TigMetaSDK.Kotlinx_serialization_coreStructureKind
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+extension TigMetaSDK.Observing : Swift.Sendable {}
+extension TigMetaSDK.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension TigMetaSDK.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.BitwiseCopyable {}
