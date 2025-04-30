@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "TigMetaSDK",
+    name: "TigMetaSDKSwiftPackage",
     products: [
         .library(
             name: "TigMetaSDK",
