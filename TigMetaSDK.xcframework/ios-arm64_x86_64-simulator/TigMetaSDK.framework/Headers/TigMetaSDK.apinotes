@@ -776,6 +776,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "group_name"
     Type: "NSString * _Nonnull"
+  - Name: "identifier"
+    PropertyKind: "Instance"
+    SwiftName: "identifier"
+    Type: "NSString * _Nonnull"
   - Name: "items"
     PropertyKind: "Instance"
     SwiftName: "items"
@@ -817,20 +821,20 @@ Classes:
     SwiftName: "videos"
     Type: "NSArray<TMSDKVideo *> * _Nonnull"
   Methods:
-  - Selector: "initWithTitle:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:"
+  - Selector: "initWithIdentifier:title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:"
     MethodKind: "Instance"
-    SwiftName: "init(title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:)"
+    SwiftName: "init(identifier:title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "NSString * _Nullable"
+      Type: "NSString * _Nonnull"
     - Position: 2
-      Type: "NSString * _Nonnull"
+      Type: "NSString * _Nullable"
     - Position: 3
-      Type: "int32_t"
-    - Position: 4
       Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "int32_t"
     - Position: 5
       Type: "NSString * _Nonnull"
     - Position: 6
@@ -838,36 +842,38 @@ Classes:
     - Position: 7
       Type: "NSString * _Nonnull"
     - Position: 8
-      Type: "NSArray<TMSDKItem *> * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 9
-      Type: "NSString * _Nullable"
+      Type: "NSArray<TMSDKItem *> * _Nonnull"
     - Position: 10
-      Type: "int32_t"
-    - Position: 11
       Type: "NSString * _Nullable"
+    - Position: 11
+      Type: "int32_t"
     - Position: 12
       Type: "NSString * _Nullable"
     - Position: 13
       Type: "NSString * _Nullable"
     - Position: 14
-      Type: "NSArray<TMSDKVideo *> * _Nonnull"
-    - Position: 15
       Type: "NSString * _Nullable"
-  - Selector: "doCopyTitle:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:"
+    - Position: 15
+      Type: "NSArray<TMSDKVideo *> * _Nonnull"
+    - Position: 16
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyIdentifier:title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:)"
+    SwiftName: "doCopy(identifier:title:description:thumbnail_url:group_id:group_name:url:created:updated:items:custom:logo_mode:logo_image_url:logo_link_url:ogp_image_url:videos:error:)"
     ResultType: "TMSDKContent * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "NSString * _Nullable"
+      Type: "NSString * _Nonnull"
     - Position: 2
-      Type: "NSString * _Nonnull"
+      Type: "NSString * _Nullable"
     - Position: 3
-      Type: "int32_t"
-    - Position: 4
       Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "int32_t"
     - Position: 5
       Type: "NSString * _Nonnull"
     - Position: 6
@@ -875,20 +881,22 @@ Classes:
     - Position: 7
       Type: "NSString * _Nonnull"
     - Position: 8
-      Type: "NSArray<TMSDKItem *> * _Nonnull"
+      Type: "NSString * _Nonnull"
     - Position: 9
-      Type: "NSString * _Nullable"
+      Type: "NSArray<TMSDKItem *> * _Nonnull"
     - Position: 10
-      Type: "int32_t"
-    - Position: 11
       Type: "NSString * _Nullable"
+    - Position: 11
+      Type: "int32_t"
     - Position: 12
       Type: "NSString * _Nullable"
     - Position: 13
       Type: "NSString * _Nullable"
     - Position: 14
-      Type: "NSArray<TMSDKVideo *> * _Nonnull"
+      Type: "NSString * _Nullable"
     - Position: 15
+      Type: "NSArray<TMSDKVideo *> * _Nonnull"
+    - Position: 16
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -1090,6 +1098,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "hidden_thumbnail"
     Type: "BOOL"
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "int32_t"
   - Name: "open_behavior"
     PropertyKind: "Instance"
     SwiftName: "open_behavior"
@@ -1143,12 +1155,12 @@ Classes:
     SwiftName: "vm_scripts"
     Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithTitle:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:"
+  - Selector: "initWithId:title:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:"
     MethodKind: "Instance"
-    SwiftName: "init(title:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:)"
+    SwiftName: "init(id:title:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:)"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
+      Type: "int32_t"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -1162,19 +1174,19 @@ Classes:
     - Position: 6
       Type: "NSString * _Nonnull"
     - Position: 7
-      Type: "int32_t"
+      Type: "NSString * _Nonnull"
     - Position: 8
-      Type: "NSString * _Nullable"
+      Type: "int32_t"
     - Position: 9
       Type: "NSString * _Nullable"
     - Position: 10
-      Type: "NSString * _Nonnull"
+      Type: "NSString * _Nullable"
     - Position: 11
-      Type: "int32_t"
-    - Position: 12
       Type: "NSString * _Nonnull"
-    - Position: 13
+    - Position: 12
       Type: "int32_t"
+    - Position: 13
+      Type: "NSString * _Nonnull"
     - Position: 14
       Type: "int32_t"
     - Position: 15
@@ -1184,36 +1196,38 @@ Classes:
     - Position: 17
       Type: "int32_t"
     - Position: 18
-      Type: "NSString * _Nonnull"
-    - Position: 19
       Type: "int32_t"
+    - Position: 19
+      Type: "NSString * _Nonnull"
     - Position: 20
-      Type: "BOOL"
+      Type: "int32_t"
     - Position: 21
       Type: "BOOL"
     - Position: 22
-      Type: "NSString * _Nonnull"
+      Type: "BOOL"
     - Position: 23
-      Type: "int32_t"
+      Type: "NSString * _Nonnull"
     - Position: 24
-      Type: "NSString * _Nullable"
+      Type: "int32_t"
     - Position: 25
       Type: "NSString * _Nullable"
     - Position: 26
-      Type: "TMSDKPanel * _Nullable"
+      Type: "NSString * _Nullable"
     - Position: 27
-      Type: "NSString * _Nullable"
+      Type: "TMSDKPanel * _Nullable"
     - Position: 28
-      Type: "BOOL"
-    - Position: 29
       Type: "NSString * _Nullable"
-  - Selector: "doCopyTitle:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:"
+    - Position: 29
+      Type: "BOOL"
+    - Position: 30
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyId:title:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(title:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:)"
+    SwiftName: "doCopy(id:title:thumbnail_url:url:type:class_type:tap_behavior:open_behavior:popup_size:time:balloon:balloon_bg_color:balloon_bg_opacity:balloon_text_color:balloon_type:balloon_size:balloon_direction:balloon_font_style:balloon_font_weight:balloon_custom_image_url:balloon_overflow:hidden_balloon:hidden_thumbnail:sku:price:currency_code:custom:panel:vm_scripts:show_text_with_image:error:)"
     ResultType: "TMSDKItem * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
+      Type: "int32_t"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
@@ -1227,19 +1241,19 @@ Classes:
     - Position: 6
       Type: "NSString * _Nonnull"
     - Position: 7
-      Type: "int32_t"
+      Type: "NSString * _Nonnull"
     - Position: 8
-      Type: "NSString * _Nullable"
+      Type: "int32_t"
     - Position: 9
       Type: "NSString * _Nullable"
     - Position: 10
-      Type: "NSString * _Nonnull"
+      Type: "NSString * _Nullable"
     - Position: 11
-      Type: "int32_t"
-    - Position: 12
       Type: "NSString * _Nonnull"
-    - Position: 13
+    - Position: 12
       Type: "int32_t"
+    - Position: 13
+      Type: "NSString * _Nonnull"
     - Position: 14
       Type: "int32_t"
     - Position: 15
@@ -1249,28 +1263,30 @@ Classes:
     - Position: 17
       Type: "int32_t"
     - Position: 18
-      Type: "NSString * _Nonnull"
-    - Position: 19
       Type: "int32_t"
+    - Position: 19
+      Type: "NSString * _Nonnull"
     - Position: 20
-      Type: "BOOL"
+      Type: "int32_t"
     - Position: 21
       Type: "BOOL"
     - Position: 22
-      Type: "NSString * _Nonnull"
+      Type: "BOOL"
     - Position: 23
-      Type: "int32_t"
+      Type: "NSString * _Nonnull"
     - Position: 24
-      Type: "NSString * _Nullable"
+      Type: "int32_t"
     - Position: 25
       Type: "NSString * _Nullable"
     - Position: 26
-      Type: "TMSDKPanel * _Nullable"
-    - Position: 27
       Type: "NSString * _Nullable"
+    - Position: 27
+      Type: "TMSDKPanel * _Nullable"
     - Position: 28
-      Type: "BOOL"
+      Type: "NSString * _Nullable"
     - Position: 29
+      Type: "BOOL"
+    - Position: 30
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
