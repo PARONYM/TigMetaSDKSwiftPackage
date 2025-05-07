@@ -1117,7 +1117,7 @@ Classes:
   - Name: "price"
     PropertyKind: "Instance"
     SwiftName: "price"
-    Type: "double"
+    Type: "TMSDKDouble * _Nullable"
   - Name: "show_text_with_image"
     PropertyKind: "Instance"
     SwiftName: "show_text_with_image"
@@ -1208,7 +1208,7 @@ Classes:
     - Position: 23
       Type: "NSString * _Nonnull"
     - Position: 24
-      Type: "double"
+      Type: "TMSDKDouble * _Nullable"
     - Position: 25
       Type: "NSString * _Nullable"
     - Position: 26
@@ -1275,7 +1275,7 @@ Classes:
     - Position: 23
       Type: "NSString * _Nonnull"
     - Position: 24
-      Type: "double"
+      Type: "TMSDKDouble * _Nullable"
     - Position: 25
       Type: "NSString * _Nullable"
     - Position: 26

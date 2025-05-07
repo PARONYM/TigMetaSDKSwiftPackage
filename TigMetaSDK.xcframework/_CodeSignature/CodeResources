@@ -10,11 +10,11 @@
 		</data>
 		<key>ios-arm64/TigMetaSDK.framework/Headers/TigMetaSDK.apinotes</key>
 		<data>
-		WPd6sFLAJv7hWfw1Ho6frCYr7/g=
+		oGCpco/ZFCN8SULFD9ZIbgFsgJc=
 		</data>
 		<key>ios-arm64/TigMetaSDK.framework/Headers/TigMetaSDK.h</key>
 		<data>
-		vWMPqpvtKYvbIHIyovJ3wjCDkgo=
+		jHj2099W4SazR1Gv9nSOYOLRMB4=
 		</data>
 		<key>ios-arm64/TigMetaSDK.framework/Info.plist</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64/TigMetaSDK.framework/TigMetaSDK</key>
 		<data>
-		oqUFFTwvoXqWE9QNCmmUYFyBw6Q=
+		dEECjB0vUH2F5k9XNHO0ueLG/PM=
 		</data>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Resources/DWARF/TigMetaSDK</key>
 		<data>
-		74SNIQjszUtSQaJ1FlXDBwKu4VU=
+		vsQnFh8/uXMNASBCioJ8Uq49Qf8=
 		</data>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TigMetaSDK.yml</key>
 		<data>
-		dJ6zMkJyN/cAT+2wnQ9/lXr6qKc=
+		GknMcR6Ib+8hu2LxM+VO08obrug=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Headers/TigMetaSDK-Swift.h</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Headers/TigMetaSDK.apinotes</key>
 		<data>
-		WPd6sFLAJv7hWfw1Ho6frCYr7/g=
+		oGCpco/ZFCN8SULFD9ZIbgFsgJc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Headers/TigMetaSDK.h</key>
 		<data>
-		vWMPqpvtKYvbIHIyovJ3wjCDkgo=
+		jHj2099W4SazR1Gv9nSOYOLRMB4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Info.plist</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/TigMetaSDK</key>
 		<data>
-		GDeadLUcUTMMV+B3Y4yXp3zU2xM=
+		HdEDa0NgySs8TsgtnL0i6ohIvZY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TigMetaSDK.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TigMetaSDK.framework.dSYM/Contents/Resources/DWARF/TigMetaSDK</key>
 		<data>
-		JnDpPgQvQiSv6bltMkes+Xmve24=
+		D6KnEgp41bXddDjHp3x1MAfGoYM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -142,22 +142,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WPd6sFLAJv7hWfw1Ho6frCYr7/g=
+			oGCpco/ZFCN8SULFD9ZIbgFsgJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			PY2TUNJh/qIpVn5p4aBjItq/31xgwj63aQZACVvcHZo=
+			cyhldw/CTZBPDEqd8P886HBeeoRg1s0qpbSPBRXd2ew=
 			</data>
 		</dict>
 		<key>ios-arm64/TigMetaSDK.framework/Headers/TigMetaSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vWMPqpvtKYvbIHIyovJ3wjCDkgo=
+			jHj2099W4SazR1Gv9nSOYOLRMB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tKPvXDQfPJ2MjmenIbj7cwvJFZB7sH+epyBEg6xdsIE=
+			MvV2hh4vCNoMuVd+qjp1brhNvWYwXLvvkn1iB5WuDkg=
 			</data>
 		</dict>
 		<key>ios-arm64/TigMetaSDK.framework/Info.plist</key>
@@ -241,11 +241,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oqUFFTwvoXqWE9QNCmmUYFyBw6Q=
+			dEECjB0vUH2F5k9XNHO0ueLG/PM=
 			</data>
 			<key>hash2</key>
 			<data>
-			k0rmDlN6DRvIhcyE6zNxwP+ULmpC0D5+FLJq7JDP1Ok=
+			R0GRcLGc9KWoo7yjinzTB8ktFBeMWpLgvyJSi7MBsDA=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Info.plist</key>
@@ -263,22 +263,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			74SNIQjszUtSQaJ1FlXDBwKu4VU=
+			vsQnFh8/uXMNASBCioJ8Uq49Qf8=
 			</data>
 			<key>hash2</key>
 			<data>
-			AcBElNTKxdVQPrkCiMcdrDqzGtvSAabBBIfLLxVHbXY=
+			w1vC6OVNf6GC3u93iJrrs5VPlO/yQ0FZEB4EUtrbboc=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/TigMetaSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TigMetaSDK.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dJ6zMkJyN/cAT+2wnQ9/lXr6qKc=
+			GknMcR6Ib+8hu2LxM+VO08obrug=
 			</data>
 			<key>hash2</key>
 			<data>
-			zNfJMyKMuhkkedSmHT8jeNzVA8DdL/ouPkFJKPv1BpU=
+			d+SRv5HzZAJnv232kqr4ZJlC69dQR2b+XHUjwD44530=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Headers/TigMetaSDK-Swift.h</key>
@@ -296,22 +296,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WPd6sFLAJv7hWfw1Ho6frCYr7/g=
+			oGCpco/ZFCN8SULFD9ZIbgFsgJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			PY2TUNJh/qIpVn5p4aBjItq/31xgwj63aQZACVvcHZo=
+			cyhldw/CTZBPDEqd8P886HBeeoRg1s0qpbSPBRXd2ew=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Headers/TigMetaSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vWMPqpvtKYvbIHIyovJ3wjCDkgo=
+			jHj2099W4SazR1Gv9nSOYOLRMB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tKPvXDQfPJ2MjmenIbj7cwvJFZB7sH+epyBEg6xdsIE=
+			MvV2hh4vCNoMuVd+qjp1brhNvWYwXLvvkn1iB5WuDkg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TigMetaSDK.framework/Info.plist</key>
@@ -428,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GDeadLUcUTMMV+B3Y4yXp3zU2xM=
+			HdEDa0NgySs8TsgtnL0i6ohIvZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			vrEdzk5spCmjkvKe/aQoXHSfdPUVfGxfN6u085stEY8=
+			IsSjkQaToc+9ge9PK10lfjPZjnR6Vwmw2WlozyirbSM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TigMetaSDK.framework.dSYM/Contents/Info.plist</key>
@@ -450,11 +450,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JnDpPgQvQiSv6bltMkes+Xmve24=
+			D6KnEgp41bXddDjHp3x1MAfGoYM=
 			</data>
 			<key>hash2</key>
 			<data>
-			hDWVe/GwdYgvqWVSzYiOlv76wtRX+uTndGsBG+QsZXI=
+			xutrB3wZWyEl7HJ2FeJu/Wmg1NnTLTBiEfGPw9IixGs=
 			</data>
 		</dict>
 	</dict>
